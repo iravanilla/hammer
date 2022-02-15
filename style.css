@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+:root {
+    font-size: 13px;
+}
+  
+.container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    font-family: "Montserrat";
+    background-color: #242222;
+    background-image: url(img/bg1.jpg);
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0 150px;
+}
+
+.header__nav__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-family: "Montserrat";
+      padding-top: 16px;
+}
+
+.header__logo-wrapper {
+    padding-top: 3px;
+}
+
+.header__content {  
+    padding-left: 32px;
+}
+
+.header__nav__list-item {
+    transition: 0.5s ease;
+}
+
+.header__nav__list-item:hover {
+    color: #C7E80A;
+    cursor: pointer;
+}
+
+.header__nav__list-item:not(:last-child) {
+    padding-right: 58px;
+}
+
+.header__phone {
+    padding-top: 16px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 305px;
+}
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    padding: 85px 140px 0 385px;
+}
+
+.main__content__logo-text {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.main__content__promo {
+    margin-top: 69px;
+    padding: 0 355px 0 0;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.main__content__question {
+    margin-top: 85px;
+}
+
+.main__content__question-button {
+    background-color: #C7E80A;
+    border: 0;
+    border-radius: 9%/47%;
+    padding: 23px 88px;
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 600;
+    color: #242222;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.main__content__question-button:hover {
+    background-color: #E3FD50;
+    color: #242222;
+    cursor: pointer;
+}
+
+.main__content__services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding: 0 585px 0 0
+}
+
+.main__content__services-link {
+    display: flex;
+    flex-direction: row;
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.main__content__services-text {
+    margin-left: 5px;
+    padding-top: 10px;
+}
+
+.main__about {
+    margin: 215px auto 0;
+}
+
+.main__about__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.main__about__content-title {
+    font-size: 30px;
+}
+
+.main__about__content-text {
+    margin-top: 50px;
+    padding: 0 500px 0;
+    font-size: 16px;
+    text-align: center;
+    line-height: 19.5px;
+}
+
+.main__about__services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    padding: 0 530px 0 660px;
+    color: #C7E80A;
+    font-size: 16px;
+}
+
+.main__about__services-icon {
+    width: 135px;
+    text-align: center;
+}
+
+.main__about__services-icon:not(:nth-child(3n+3)) {
+    margin-right: 90px;
+}
+
+.main__about__services-icon:nth-child(-n+3) {
+    margin-bottom: 58px;
+}
+
+.main__about__services-icon-img {
+    margin-bottom: 10px;
+}
+
+.main__tariff {
+    margin: 183px auto 0;
+    min-width: 0;
+}
+
+.main__tariff__title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+/* .main__tariff__slider-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.main__tariff__arrow {
+    padding-top: 70px;
+} */
+
+/* .slider {
+    display: flex;
+    flex-direction: row;
+    padding: 0 150px;
+} */
+
+.slider {
+    position: relative;
+    padding: 0px 450px 0 500px;
+}
+
+.slider-text {
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.slider-link {
+    text-decoration: none;
+    color: #FFF;
+    padding: 300px 0 0 0;
+    margin-right: 30px;
+    transition: 0.5s ease;
+}
+
+.slider-link:hover {
+    color: #E3FD50;
+    cursor: pointer;
+}
+
+.slider-link-aquazone {
+    background: url('img/aquazone.png')  0 0 / 90% no-repeat;
+    transition: 0.5s ease;
+}
+
+.slider-link-dance {
+    background: url('img/dance.png')  0 0 / 90% no-repeat;
+    transition: 0.5s ease;
+}
+
+.slider-link-gym {
+    background: url('img/gym.png')  0 0 / 90% no-repeat;
+    transition: 0.5s ease;
+}
+
+.slider-link-martial {
+    background: url('img/martial.png')  0 0 / 90% no-repeat;
+    transition: 0.5s ease;
+}
+
+.slider-link-martial:hover {
+    background: url('img/martial-hover.png')  0 0 / 90% no-repeat;
+}
+
+.slider-link-gym:hover {
+    background: url('img/gym-hover.png')  0 0 / 90% no-repeat;
+}
+
+.slider-link-aquazone:hover {
+    background: url('img/aquazone-hover.png')  0 0 / 90% no-repeat;
+}
+
+.slider-link-dance:hover {
+    background: url('img/dance-hover.png')  0 0 / 90% no-repeat;
+}
+
+.slider .slick-arrow {
+    position: absolute;
+    top: 46%;
+    z-index: 10;
+    font-size: 0;
+}
+
+.slider .slick-arrow.slick-prev {
+    background: url('img/left.svg') 0 0 / 100% no-repeat;
+    border: 0;
+    left: 415px;
+    width: 35px;
+    height: 90px;
+    transition: 0.5s ease;
+}
+
+.slider .slick-arrow.slick-prev:hover {
+    background: url('img/left-hover.svg') 0 0 / 100% no-repeat;
+    border: 0;
+    left: 415px;
+    width: 35px;
+    height: 90px;
+    cursor: pointer;
+}
+
+.slider .slick-arrow.slick-next {
+    background: url('img/right.svg') 0 0 / 100% no-repeat;
+    border: 0;
+    right: 465px;
+    width: 42px;
+    height: 90px;
+    transition: 0.5s ease;
+}
+
+.slider .slick-arrow.slick-next:hover {
+    background: url('img/right-hover.svg') 0 0 / 100% no-repeat;
+    border: 0;
+    right: 465px;
+    width: 35px;
+    height: 90px;
+    cursor: pointer;
+}
+
+.slick-list {
+    width: 915px;
+    overflow: hidden;
+}
+
+.slider .slick-track {
+    display: flex;
+    margin-top: 95px;
+}
+
+.main__tariff__timetable {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 165px;
+    padding: 0 570px 0 452px;
+}
+
+.main__tariff__timetable-button {
+    background-color: #C7E80A;
+    border: 0;
+    border-radius: 9%/47%;
+    padding: 25px 35px;
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 600;
+    color: #242222;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.main__tariff__timetable-button:hover {
+    background-color: #E3FD50;
+    color: #242222;
+    cursor: pointer;
+}
+
+.main__tariff__timetable-text {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36px;
+    letter-spacing: 1.5px;
+}
+
+.main__team {
+    display: flex;
+    flex-direction: column;
+    margin-top: 202px;
+    padding: 0 870px 0 450px;
+}
+
+.main__team-title {
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+
+.main__team-text {
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    line-height: 19.5px; 
+}
+
+.text-1 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.main__team-text-one {
+    margin-bottom: 10px;
+}
+
+.main__team-wrapper {
+    margin-top: 63px;
+}
+
+.main__team-button {
+    background-color: #C7E80A;
+    border: 0;
+    border-radius: 9%/47%;
+    padding: 23px 22px;
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 600;
+    color: #242222;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.main__team-button:hover {
+    background-color: #E3FD50;
+    color: #242222;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #432545;
+    font-size: 12px;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 60px 0 95px 460px;
+}
+
+.footer__address:not(:last-child) {
+    width: 225px;
+}
+
+.footer__address:last-child {
+    width: 110px;
+}
+
+
+.footer__address:nth-child(1) {
+    margin-top: -17px;
+}
+
+/* .footer__address:not(:last-child) {
+    margin-right: 42px;
+} */
+
+.footer__link {
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 435px 0 0px;
+}
+
+.footer__link:hover {
+    cursor: pointer;
+}
+
+.footer__link-item:not(:last-child) {
+    margin-right: 20px;
+}
